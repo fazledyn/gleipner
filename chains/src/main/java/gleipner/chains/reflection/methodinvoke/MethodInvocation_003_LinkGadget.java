@@ -10,7 +10,4 @@ public class MethodInvocation_003_LinkGadget {
         sinkGadget.sinkMethod(taint);
     }
 
-
-
-
 }
