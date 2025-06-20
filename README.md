@@ -8,14 +8,20 @@ A benchmark for Java gadget chain detecting algorithms.
 
 ## Citation
 
-Official publication will appear in the *Proceedings of FSE 2025*. For now, there is a preprint available on *hal.science*:
 ```bibtex
-@inproceedings{kreyssig_gleipner_2025,
+@article{kreyssig_gleipner_2025,
     author = {Kreyssig, Bruno and Bartel, Alexandre},
-    title = {Gleipner - A Benchmark for Gadget Chain Detection in Java Deserialization Vulnerabilities},
-    booktitle = {Preprint for the ACM International Conference on the Foundations of Software Engineering (FSE) 2025},
-    year = 2025,
-    url = {https://hal.science/hal-04890074}
+    title = {Gleipner: A Benchmark for Gadget Chain Detection in Java Deserialization Vulnerabilities},
+    year = {2025},
+    issue_date = {July 2025},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    volume = {2},
+    number = {FSE},
+    url = {https://doi.org/10.1145/3715711},
+    doi = {10.1145/3715711},
+    journal = {Proc. ACM Softw. Eng.},
+    month = jun
 }
 ```
 
