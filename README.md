@@ -25,6 +25,23 @@ A benchmark for Java gadget chain detecting algorithms.
 }
 ```
 
+## Requirements
+
+To build the benchmark, you need:
+*   Java 8 or higher (tested up to Java 25)
+*   Maven
+
+To run the benchmarked algorithms (via `algorithms/algorithms.py`), you need:
+*   Python 3.x
+*   **JDK 8** (Required for GadgetInspector, SeriAnalyzer, SerHybrid, JChainz, JDD)
+*   **JDK 11** (Required for Crystallizer)
+*   **Gradle 7** (Required for GadgetInspector)
+*   Neo4j (Required for Tabby)
+*   Docker (Required for Crystallizer, Tabby)
+
+You must configure the paths to these tools in `algorithms/algorithms.py` or set them via environment variables (see below).
+
+
 ## Usage
 
 Gleipner is provided as a collection of JAR files, each probing different challenges in gadget chain detection (see Specification). 

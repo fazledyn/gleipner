@@ -24,9 +24,9 @@ GITHUB_PROJECTS = {
 }
 
 # An older JDK is required to execute gradle script in gadgetinspector
-JDK_8 = "/home/jvm/oracle/8/jdk1.8.0_221"
-JDK_11 = "/home/jvm/openjdk/11/jdk-11.0.2"
-GRADLE_7 = "/opt/gradle/7.1.1/bin/gradle"
+JDK_8 = os.environ.get("JDK_8_HOME", "/home/jvm/oracle/8/jdk1.8.0_221")
+JDK_11 = os.environ.get("JDK_11_HOME", "/home/jvm/openjdk/11/jdk-11.0.2")
+GRADLE_7 = os.environ.get("GRADLE_7_HOME", "/opt/gradle/7.1.1/bin/gradle")
 CONFIG_DIR = "_config"
 OUTPUT_DIR = "_output"
 TIME_FILE = "perf.log"
