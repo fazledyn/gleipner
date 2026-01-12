@@ -8,7 +8,7 @@ import re
 import timeit
 import time
 
-from neo4j import GraphDatabase
+# from neo4j import GraphDatabase
 
 ##### CONFIG #####
 
@@ -163,7 +163,7 @@ class Serianalyzer(Project):
         replace_file(self.directory, "pom.xml", "")
         replace_file(self.directory, "SerianalyzerConfig.java",
                      os.path.join("src", "main", "java", self.directory))
-        proc = subprocess.run(["mvn", "clean", "package"], cwd=self.directory, env=self.env, text=True,
+        proc = subprocess.run(["mvn", "-Dmaven.repo.local=" + os.path.abspath("_m2"), "clean", "package"], cwd=self.directory, env=self.env, text=True,
                               stdout=subprocess.PIPE)
         if self.debug:
             print(proc.stdout)

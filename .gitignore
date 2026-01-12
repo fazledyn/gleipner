@@ -8,6 +8,8 @@ algorithms/gadgetinspector/
 algorithms/tabby/
 algorithms/JDD/
 algorithms/_target/
+algorithms/_m2/
+algorithms/env/
 scripts/tmp/
 
 false_positives/gadgetinspector/
